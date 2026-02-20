@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 25px;
+
+}
+
+#wiki:hover {
+    color: green;
+}
+
+#wiki:active {
+    color: red;
+
+}
+
+#A1 {
+    text-align: left;
+}

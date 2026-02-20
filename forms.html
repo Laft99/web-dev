@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Forms Example</h1>
+    <form action="tacos for now">
+        <p>
+            <label for="username">Enter user name:</label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+        <label for="password">Enter password:</label>
+        <input id="password" type="password" placeholder="password">
+        <p>
+            <label for="color">Select a color:</label>
+            <input type="color" id="color">
+        </p>
+        <p></p>
+        <label for="phone">enter phone number:</label>
+        <input id="phone" placeholder="Enter your phone number">
+        <!-- another way to do label and include input in it -->
+        <!-- we wont be using that tho -->
+        <p>
+            <label>
+                Enter your Age
+                <input type="number" placeholder="age" id="age">
+            </label>
+        </p>
+        <button>Submit</button>
+        <p>
+        <form action="https://www.reddit.com/search">
+            <label for="search-reddit">Search Reddit:</label>
+            <input type="text" name="q" placeholder="Search Reddit">
+            <button>Search reddit</button>
+        </form>
+        </p>
+
+        <p>
+        <form action="/submit">
+            <h1>working with buttons</h1>
+            <h3>More inputes</h3>
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">agree to services</label>
+            <button>submit</button>
+
+            <h1> working with radio buttons</h1>
+            <p>
+            <h5>select your size</h5>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+
+            <label for="l">L:</label>
+            <input type="radio" name="size" id="l" value="l">
+            <p></p>
+            <button>submit</button>
+            </p>
+
+            <p>
+                <label for="meal">Please select your entree:</label>
+                <select name="meal" id="meal">
+                    <option value="fish">Fish</option>
+                    <option value="Veg">Vegetarian</option>
+                    <option value="steak">Steak</option>
+                </select>
+            </p>
+            <p>
+                <label for="" cheese">Choose the amount of cheese.</label>
+                <input type="range" name="cheese" id="cheese" min="0" max="5" value="2">
+            </p>
+            <button>submit</button>
+
+        </form>
+
+
+        <h1>Working with the select element</h1>
+        <h1>Please select your destination</h1>
+        <form>
+            <p>
+                <label for "country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">--choose one please--</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk" selected>United Kingdom</option>
+                </select>
+            </p>
+            <button>
+                submit
+            </button>
+        </form>
+
+    </form>
+
+    <h2> Validation demo </h2>
+    <form action="/dummy">
+        <label for="usermane">Enter username</label>
+        <input type="text" name="usermane" id="username" required>
+        <br>
+        <label for="password">Enter password </label>
+        <input type="text" name="password" id="password" required minlength="5" maxlength="7">
+        <button>submit</button>
+    </form>
+
+    <h2>Textarea "tell us your story!</h2>
+    <label for="story"> Tell us something about yourself</label>
+    <br>
+    <textarea id="story" name="story" rows="5" cols="33" placeholder="Hi my name is "></textarea>
+</body>
+
+</html>
